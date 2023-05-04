@@ -1,18 +1,16 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
- * main - Entry point
- * Return: Always 0
+ * main - check the code
+ *
+ * Return: Always 0.
  */
 int main(void)
 {
-	unsigned long int i = 3, n = 612852475143;
-
-	for (; i < 12057; i += 2)
-	{
-		while (n % i == 0 && n != i)
-			n /= i;
-	}
-	printf("%lu\n", n);
-	return (0);
+    print_triangle(2);
+    print_triangle(10);
+    print_triangle(1);
+    print_triangle(0);
+    return (0);
 }
+
